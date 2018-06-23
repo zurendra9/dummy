@@ -31,8 +31,14 @@ public class HelloWorld
     System.out.println("Watching !");
     System.out.println("oh ho");
     HelloWorld.fun();
-    Base b[] = {new Base(),new Child()};
+    Base b[] = {new Base(),new Child(), new Base(){
+      @Override
+      public void message(){
+
+      System.out.println("Bahut hua samman \nTumahri aisii tesi");
+    }}};
     HelloWorld.quarrel(b[0]);
     HelloWorld.quarrel(b[1]);
+    HelloWorld.quarrel((b[2]));
   }
 }
