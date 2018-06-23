@@ -1,7 +1,24 @@
 import java.util.*;
-
+class Base{
+  public void message()
+  {
+      System.out.println("You don't deserve it son!");
+  }
+}
+class Child extends Base
+{
+  @Override
+  public void message()
+  {
+    System.out.println("I do!");
+  }
+}
 public class HelloWorld
 {
+  static void quarrel(Base b)
+  {
+    b.message();
+  }
   static void fun()
   {
     int one = 123;
@@ -14,5 +31,8 @@ public class HelloWorld
     System.out.println("Watching !");
     System.out.println("oh ho");
     HelloWorld.fun();
+    Base b[] = {new Base(),new Child()};
+    HelloWorld.quarrel(b[0]);
+    HelloWorld.quarrel(b[1]);
   }
 }
