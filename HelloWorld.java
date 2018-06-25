@@ -42,6 +42,7 @@ public class HelloWorld
     HelloWorld.quarrel((b[2]));
     branching.param = "asdfgh";
     System.out.println(branching.param);
+    System.out.println("wadefregthyjuki");
   }
 }
 
