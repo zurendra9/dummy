@@ -40,16 +40,5 @@ public class HelloWorld
     HelloWorld.quarrel(b[0]);
     HelloWorld.quarrel(b[1]);
     HelloWorld.quarrel((b[2]));
-    branching.param = "asdfgh";
-    System.out.println(branching.param);
-    System.out.println("wadefregthyjuki");
-  }
-}
-
-class branching{
-  static String param;
-  branching(String val)
-  {
-    param = val;
   }
 }
