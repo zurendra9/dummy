@@ -27,6 +27,7 @@ public class HelloWorld
   }
   public static void main(String[] args)
   {
+    // System.out.println("currently on branch 3");
     System.out.println("Watch out !!");
     System.out.println("Watching !");
     System.out.println("oh ho");
@@ -40,5 +41,17 @@ public class HelloWorld
     HelloWorld.quarrel(b[0]);
     HelloWorld.quarrel(b[1]);
     HelloWorld.quarrel((b[2]));
+    branching.param = "asdfgh";
+    System.out.println(branching.param);
+    System.out.println("wadefregthyjuki");
+
+  }
+}
+
+class branching{
+  static String param;
+  branching(String val)
+  {
+    param = val;
   }
 }
